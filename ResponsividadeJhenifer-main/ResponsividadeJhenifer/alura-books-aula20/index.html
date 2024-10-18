@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CineMagic</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="cabeçalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu" class="container__rotulo">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+        <li class="lista-menu__titulo">Categorias</li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Terror</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Fantasia</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Comédia</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Romance</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Documentário</a>
+        </li>
+      </ul>
+      <img src="img/logocine.svg.jpg" alt="Logo da CineMagic" class="container__imagem">
+
+      <style>
+        .container__imagem {
+          width: 200px;
+          height: 200px;
+        }
+      </style>
+      
+
+      <ul class="opções">
+        <input type="checkbox" id="opções-menu" class="opções__botão" />
+        <label for="opções-menu" class="opções__rotulo">
+          <li class="opções__item">Categorias</li>
+        </label>
+
+        <ul class="lista-menu">
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Terror</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Fantasia</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Comédia</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Romance</a>
+          </li>
+          <li class="lista-menu__item">
+            <a href="#" class="lista-menu__link">Documentário</a>
+          </li>
+        </ul>
+        <li class="opções__item"><a href="#" class="opções__link">Favoritos</a></li>
+        <li class="opções__item"><a href="#" class="opções__link">Minha lista</a></li>
+      </ul>
+
+    </div>
+    <div class="container">
+      <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos"
+          class="container__imagem container__imagem-transparente"></a>
+      <a href="#" class="container__link">
+        <img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem">
+
+<style>
+  .container__imagem {
+    width: 50px;
+    height: 50px;
+  }
+</style>
+
+        <p class="container__texto">Meu perfil</p>
+      </a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">Já está em mente qual será o próximo para assistir?</h2>
+    <p class="banner__texto">O encanto do cinema em cada filme!</p>
+    <input type="search" class="banner__pesquisa" placeholder="Escolha o seu próximo filme">
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Novos lançamentos</h2>
+
+    <div class="carrossel__container">
+      <!-- Slider main container -->
+      <div class="swiper">
+
+        <div class="swiper-pagination"></div>
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src=""
+              alt="Filmes de terror e suspense"></div>
+          <div class="swiper-slide"><img src="img/Liderança.svg"
+              alt="Filmes de fantasia e romantasia "></div>
+          <div class="swiper-slide"><img src="img/Javascript.svg" alt="Filmes de romance">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/Guia Front-end.svg" alt="Filmes de comédia" />
+          </div>
+          <div class="swiper-slide">
+            <img src="img/Portugol.svg" alt="Filmes de documentário" />
+          </div>
+
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+      </div>
+
+      <div class="card">
+        <div class="card__descrição">
+          <div class="descrição">
+            <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+            <h2 class="descrição__titulo-livro">Invocação do Mal 2.</h2>
+            <p class="descrição__texto">
+              Os famosos demonologistas Lorraine e Ed Warren viajam até o norte de Londres. Lá, eles ajudam uma mãe solteira que cria quatro filhos sozinha em uma casa atormentada por espíritos malignos.
+            </p>
+          </div>
+          <img src="invocação.png" class="descrição__imagem" />
+        </div>
+        <div class="card__botões">
+          <ul class="botões">
+            <li class="botões__item">
+              <img src="img/Favoritos.svg" alt="Favoritar livro" />
+            </li>
+            
+          </ul>
+          <a href="#" class="botões__ancora">Saiba mais</a>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section class=”carrossel”>
+    <h2 class="carrossel__titulo">Mais procurados</h2>
+
+    <div class="carrossel__container">
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide"><img src="img/ApacheKafka.svg"
+              alt="Godzilla e Kong: O novo império"></div>
+          <div class="swiper-slide"><img src="img/Liderança.svg" alt="Oppenheimer">
+          </div>
+          <div class="swiper-slide"><img src="img/Javascript.svg" alt="mad Max: Estrada da Fúria">
+          </div>
+          <div class="swiper-slide"><img src="img/Guia Front-end.svg" alt="Duna"></div>
+          <div class="swiper-slide"><img src="img/Portugol.svg" alt="Duna: Parte 2"></div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+
+  </section>
+
+  <section class="tópicos">
+    <h2 class="tópicos__titulo">FILMES PROCURADOS RECENTEMENTE</h2>
+    <ul class="tópicos__lista">
+      <li class="tópicos__item"><a href="#" class="tópicos__link">Divertida mente 2</a></li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Superman</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Deadpool e Wolverine</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Meu Malvado Favorito 4</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">É Assim Que Acaba</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Coringa</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">A Bela e a Fera</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Harry Potter e o Enigma do Príncipe</a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="contato">
+    <div class="contato__descrição">
+      <h2 class="contato__titulo">Fique por dentro dos lançamentos!</h2>
+      <p class="contato__texto">
+        Atualização de lançamentos e novidades no site.
+      </p>
+    </div>
+    <input type="email" placeholder="        Cadastre seu e-mail" class="contato__email">
+  </section>
+
+  <hr />
+
+  <footer class="rodapé">
+    <h2 class="rodapé__titulo">Grupo CineMagic</h2>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+        el: '.swiper-pagination',
+        type: 'bullets',
+      },
+    });
+  </script>
+</body>
+
+</html>
